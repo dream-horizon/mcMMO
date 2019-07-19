@@ -165,7 +165,7 @@ public class UnarmedManager extends SkillManager {
     }
 
     public double getIronArmDamage() {
-        Config config = Config.getInstance();
+        AdvancedConfig config = AdvancedConfig.getInstance();
         Player player = getPlayer();
         double bonusDamage;
         if (player == null) {

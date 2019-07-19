@@ -102,16 +102,6 @@ public abstract class SkillCommand implements TabExecutor {
                 //Stats
                 getStatMessages(player, isLucky, hasEndurance, skillValue);
 
-                //Header
-
-
-                //Link Header
-                if(Config.getInstance().getUrlLinksEnabled())
-                {
-                    player.sendMessage(LocaleLoader.getString("Overhaul.mcMMO.Header"));
-                    TextComponentFactory.sendPlayerUrlHeader(player);
-                }
-
 
                 if (Config.getInstance().getScoreboardsEnabled() && Config.getInstance().getSkillUseBoard()) {
                     ScoreboardManager.enablePlayerSkillScoreboard(player, skill);
