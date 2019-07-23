@@ -976,8 +976,11 @@ public class AdvancedConfig extends AutoUpdateConfigLoader {
     public double getMaxHorseJumpStrength() { return config.getDouble("Skills.Taming.CallOfTheWild.MaxHorseJumpStrength", 2.0D); }
 
     /* UNARMED */
-
     public boolean getDisarmProtected() { return config.getBoolean("Skills.Unarmed.Disarm.AntiTheft", false); }
+    public int getUnarmedMaxBonus() { return config.getInt("Skills.Unarmed.Max_Bonus", 5); }
+    public int getUnarmedLevelIncrement() { return config.getInt("Skills.Unarmed.Level_Increment", 10); }
+    public double getUnarmedBonusPerIncrement() { return config.getDouble("Skills.Unarmed.Bonus_Per_Increment", 0.1); }
+    public boolean getUnarmedUseRankIncrement() { return config.getBoolean("Skills.Unarmed.Use_Rank_Increment", false); }
 
     /* WOODCUTTING */
     /*public int getLeafBlowUnlockLevel() { return config.getInt("Skills.Woodcutting.LeafBlower.UnlockLevel", 100); }*/
