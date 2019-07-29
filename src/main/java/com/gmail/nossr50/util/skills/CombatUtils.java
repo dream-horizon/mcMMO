@@ -173,7 +173,7 @@ public final class CombatUtils {
         double initialDamage = event.getDamage();
         double finalDamage = initialDamage;
 
-        if(master != null && !master.isOnline() && master.isValid()) {
+        if(master != null && master.isOnline() && master.isValid()) {
             McMMOPlayer mcMMOPlayer = UserManager.getPlayer(master);
 
             //Make sure the profiles been loaded
@@ -552,6 +552,7 @@ public final class CombatUtils {
 
         target.setMetadata(mcMMO.CUSTOM_DAMAGE_METAKEY, mcMMO.metadataValue);
         target.damage(damage, attacker);
+        target.removeMetadata(mcMMO.CUSTOM_DAMAGE_METAKEY, mcMMO.p);
 
 //        //IFrame storage
 ////        int noDamageTicks = target.getNoDamageTicks();

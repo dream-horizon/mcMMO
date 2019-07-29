@@ -1,3 +1,17 @@
+Version 2.1.101
+    mcnotify command now checks that it's being executed by a player
+    Fixed some concurrency concerns around BleedTasks
+
+Version 2.1.100
+    Corrected some mistakes made in the updated Russian locale (thanks myfbone!)
+
+Version 2.1.99
+    MASSIVE update to the Russian locale (ru) credit to myfbone
+    Debug mode (/mmodebug) will now print info about XP perks and how they are modifying your incoming XP
+
+Version 2.1.98
+    Fixed a bug that prevented Taming XP from combat
+
 Version 2.1.97
     mcMMO is compatible with 1.14.4 (Didn't require any changes)
     Fixed a NPE that could occur if a pet participated in combat and its master's mcMMO data was not available
